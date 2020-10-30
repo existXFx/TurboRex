@@ -11,11 +11,12 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib".freeze]
   s.authors = ["exist".freeze]
-  s.date = "2020-10-29"
+  s.date = "2020-10-30"
   s.description = "This gem is mainly a proof of concept for the topic \"Automated Hunting for Cross-Server Xrefs in Microsoft RPC and COM\" on Code Blue 2020. It is a locator for RPC server/client routines and COM interface methods/client calls, so it can be used to search for Cross-Server Xrefs scenes. In addition, it also has other functions such as ALPC client/server.".freeze
   s.email = "exist_sycsec@outlook.com".freeze
   s.extra_rdoc_files = [
     "LICENSE",
+    "README.md",
     "README.rdoc"
   ]
   s.files = [
@@ -98,9 +99,9 @@ Gem::Specification.new do |s|
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<rex>.freeze, [">= 0"])
-      s.add_runtime_dependency(%q<docile>.freeze, [">= 0"])
-      s.add_runtime_dependency(%q<rgl>.freeze, [">= 0"])
+      s.add_runtime_dependency(%q<rex>.freeze, ["~> 2.0.11"])
+      s.add_runtime_dependency(%q<docile>.freeze, ["~> 1.3.2"])
+      s.add_runtime_dependency(%q<rgl>.freeze, ["~> 0.5.6"])
       s.add_runtime_dependency(%q<win32-api>.freeze, [">= 0"])
       s.add_runtime_dependency(%q<os>.freeze, [">= 0"])
       s.add_development_dependency(%q<shoulda>.freeze, [">= 0"])
@@ -111,9 +112,9 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<pry-byebug>.freeze, [">= 0"])
       s.add_development_dependency(%q<rspec>.freeze, [">= 0"])
     else
-      s.add_dependency(%q<rex>.freeze, [">= 0"])
-      s.add_dependency(%q<docile>.freeze, [">= 0"])
-      s.add_dependency(%q<rgl>.freeze, [">= 0"])
+      s.add_dependency(%q<rex>.freeze, ["~> 2.0.11"])
+      s.add_dependency(%q<docile>.freeze, ["~> 1.3.2"])
+      s.add_dependency(%q<rgl>.freeze, ["~> 0.5.6"])
       s.add_dependency(%q<win32-api>.freeze, [">= 0"])
       s.add_dependency(%q<os>.freeze, [">= 0"])
       s.add_dependency(%q<shoulda>.freeze, [">= 0"])
@@ -125,9 +126,9 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<rspec>.freeze, [">= 0"])
     end
   else
-    s.add_dependency(%q<rex>.freeze, [">= 0"])
-    s.add_dependency(%q<docile>.freeze, [">= 0"])
-    s.add_dependency(%q<rgl>.freeze, [">= 0"])
+    s.add_dependency(%q<rex>.freeze, ["~> 2.0.11"])
+    s.add_dependency(%q<docile>.freeze, ["~> 1.3.2"])
+    s.add_dependency(%q<rgl>.freeze, ["~> 0.5.6"])
     s.add_dependency(%q<win32-api>.freeze, [">= 0"])
     s.add_dependency(%q<os>.freeze, [">= 0"])
     s.add_dependency(%q<shoulda>.freeze, [">= 0"])
